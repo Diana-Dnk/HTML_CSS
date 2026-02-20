@@ -1,0 +1,295 @@
+.header{
+    background-color: rgb(255, 200, 200);
+    width: 1400px;
+    height: 100px;
+    position: relative;
+    left: 40px;
+
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+}
+
+.links{
+    position: absolute;
+    padding-left: 400px;
+    bottom: 40px;
+    font-size: 18px;
+    margin-right: 40px
+}
+
+.links a{
+    margin-right: 40px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    
+}
+
+.icons {
+    position: absolute;
+    right: 150px;
+    top: 35px;
+}
+
+.icons img {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+}
+
+.header-btn {
+    position: absolute;
+    right: 30px;
+    top: 35px;
+}
+
+.header-btn button {
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+
+.main{
+    background-color: rgb(255, 214, 214);
+    width: 1400px;
+    height: 830px;
+    position: relative;
+    left: 40px;
+    top: 20px;
+}
+
+.leftside img{
+    width: 500px;
+    height: 830px;
+}
+
+.rightside {
+    position: relative;
+    left: 520px;
+    bottom: 840px;
+}
+
+.top {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.top h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.top p {
+    width: 600px;
+    font-size: 18px;
+    margin-bottom: 30px;
+
+
+}
+
+.headline {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cards-top {
+    position: relative;
+    height: 100px;
+    right: 5px;
+    bottom: 40px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+    width: 200px;
+    height: 270px;
+    background: #000000;
+    position: absolute;
+    padding: 5px;
+    color: white;
+}
+
+.card1 { 
+    left: 0; 
+}
+.card2 { 
+    left: 220px;
+}
+.card3 { 
+    left: 440px; 
+}
+.card4 { 
+    left: 660px; 
+}
+
+.card1 img,
+.card2 img,
+.card3 img,
+.card4 img {
+    width: 190px;
+    height: 130px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+
+.card1 h1,
+.card2 h1,
+.card3 h1,
+.card4 h1 {
+    font-size: 15px;
+    position: absolute;
+    left: 10px;
+    bottom: 110px;
+
+}
+
+
+.card1 p,
+.card2 p,
+.card3 p,
+.card4 p{
+    font-size: 14px;
+    position: absolute;
+    left: 10px;
+    right: 5px;
+    bottom: 40px;
+}
+
+.card1 button,
+.card2 button,
+.card3 button,
+.card4 button {
+    position: absolute;
+    bottom: 18px;
+    left: 10px;
+    padding: 3px 12px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.cards-bot {
+    position: relative;
+    height: 100px;
+    right: 10px;
+    top: 200px;
+}
+
+.card5,
+.card6,
+.card7,
+.card8 {
+    width: 200px;
+    height: 270px;
+    background: #000000;
+    position: absolute;
+    padding: 5px;
+    margin-left: 10px;
+    color: white;
+}
+
+.card5 { 
+    left: 0; 
+}
+.card6 { 
+    left: 220px;
+}
+.card7 { 
+    left: 440px; 
+}
+.card8 { 
+    left: 660px; 
+}
+
+.card5 img,
+.card6 img,
+.card7 img,
+.card8 img {
+    width: 190px;
+    height: 130px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+
+.card5 h1,
+.card6 h1,
+.card7 h1,
+.card8 h1 {
+    font-size: 15px;
+    position: absolute;
+    left: 10px;
+    bottom: 110px;
+}
+
+
+.card5 p,
+.card6 p,
+.card7 p,
+.card8 p{
+    font-size: 14px;
+    position: absolute;
+    left: 10px;
+    right: 5px;
+    bottom: 40px;
+}
+
+.card5 button,
+.card6 button,
+.card7 button,
+.card8 button {
+    position: absolute;
+    bottom: 18px;
+    left: 10px;
+    padding: 3px 12px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.footer {
+    background-color: rgb(255, 200, 200);
+    width: 1400px;
+    height: 100px;
+    position: relative;
+    right: 510px;
+    top:390px;
+}
+
+.footer-logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+.footer img{
+    height: 80px;
+    border-radius: 15px;
+}
+
+.policy {
+    position: absolute;
+    left: 480px;
+    top: 10px;
+    text-align: center;
+}
+
+.footer-icons {
+    position: absolute;
+    right: 60px;
+    top: 37px;
+}
+
+.footer-icons img {
+    height: 30px;
+    width: 30px;
+    margin-left: 25px;
+}

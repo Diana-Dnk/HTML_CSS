@@ -1,0 +1,54 @@
+body {
+    height: 100vh;             
+    display: flex;
+    justify-content: center;    
+    align-items: center;  
+    color: white;      
+}
+.card{
+    width: 700px;
+    height: 350px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    border-radius: 25px ;
+}
+
+.left img{
+    width: 350px;
+    height: 350px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.title{
+       padding: 5px;
+}
+
+.right h1{
+    font-size: 16px;
+    font-weight: bolder;
+} 
+.right p{
+    font-size: 10px;
+    font-weight: lighter;
+} 
+
+.text{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-style: italic;
+
+    
+}
+.star{
+    display: flex;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+}
+

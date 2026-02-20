@@ -1,0 +1,38 @@
+h1{
+    background-color: deeppink;
+    color: white;
+    width: 75px;
+    margin: 0 auto;
+}
+p{
+    background-color: fuchsia;
+    color: white;
+
+}
+body{
+    background-color: black;
+}
+
+.my-button{
+    background-color: #4CAF50;  
+    color: white;              
+    border: none;              
+    padding: 10px 20px; 
+    border-radius: 10px;      
+}
+
+.my-button2{
+    background-color:coral;  
+    color: white;                            
+    padding: 10px 20px;  
+    margin: 40px ; 
+    border-radius: 5px;      
+}
+
+.my-button3{
+    background-color: aqua;  
+    color: white;                            
+    padding: 10px 20px;  
+    margin: 60px ; 
+    border-radius: 15px;      
+}
