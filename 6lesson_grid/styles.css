@@ -1,0 +1,27 @@
+.item{
+    border: 1px solid black;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: "header header"
+                        "sidebar content"
+                        "sidebar content";
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+}
+
+header{
+    grid-area: header; 
+    background: rgb(255, 141, 141);  
+}
+
+aside{
+    grid-area: sidebar;
+    background: blue;
+}
+
+main{
+    grid-area: content;
+    background: aqua;
+}
