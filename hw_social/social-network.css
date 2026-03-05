@@ -1,0 +1,190 @@
+body{
+    height: 90vh;
+    padding: 50px;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    gap: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* ЭТО ЛЕВАЯ ЧАСТЬ */
+.leftbar{
+    flex: 15%;
+    padding: 40px;
+    background-color: #18191D;
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+.nav img{
+    width: 45px;
+}
+.out img{
+    width: 50px;
+}
+.logo{
+font-size: 25px;
+font-weight: bolder;
+}
+/* ЭТО ЛЕВАЯ ЧАСТЬ */
+
+
+/* ЭТО ТО ЧТО ВЫ ДОЛЖНЫ РЕАЛИЗОВАТЬ */
+.main{
+    flex: 80%;
+    padding: 40px;
+    background-color: #18191D;
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input{
+    width: 250px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.main-header-icons img{
+    width: 28px;
+    margin-left: 10px;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.main-content{
+    padding: 40px;
+    border-radius: 16px;
+}
+
+.post-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-user{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.post-user img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-user h1{
+    font-size: 16px;
+}
+
+.post-icons img{
+    width: 24px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.post-image img{
+    width: 100%;
+    height: 450px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.post-description h1{
+    font-size: 16px;
+}
+
+
+.post-reactions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-reactions-icons img{
+    width: 20px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.created_at p{
+    font-size: 12px;
+    color: #9ca3af;
+}
+/* ЭТО ТО ЧТО ВЫ ДОЛЖНЫ РЕАЛИЗОВАТЬ */
+
+
+/* ЭТО ПРАВАЯ ЧАСТЬ */
+.rightbar{
+    flex: 15%;
+    background-color: #18191D;
+    padding: 40px;
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.user {
+    display: flex;
+    gap: 50px;
+}
+.avatar img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+.avatar-info p{
+    text-align: start;
+    font-size: 20px;
+    color: gray;
+    font-weight: bold;
+    position: relative;
+    bottom: 15px;
+}
+.friends{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 2px white solid;
+    padding-top: 30px;
+}
+.friend{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.friend-avatar img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.friend-info h1{
+    font-size: 16px;
+}
+.friend-info p{
+    font-size: 12px;
+}
+/* ЭТО ПРАВАЯ ЧАСТЬ */
