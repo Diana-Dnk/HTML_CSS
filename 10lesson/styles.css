@@ -1,0 +1,24 @@
+.btn4 {
+  padding: 14px 28px;
+  background-color: black;
+  color: white;
+  border-radius: 16px;
+  border: none;
+  transition: background-color 0.5s ease 0.2s;
+}
+
+.btn4:hover {
+  background-color: greenyellow;
+  color: black;
+  transform: scale(0.8);
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+}
+
+.card:hover {
+  transform: scale(1.1) translateY(-10px);
+}/*# sourceMappingURL=styles.css.map */

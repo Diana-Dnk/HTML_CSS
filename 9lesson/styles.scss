@@ -1,0 +1,76 @@
+body{
+    background-image: url(https://wallpapers.com/images/hd/90-s-vintage-retro-aesthetic-3840-x-2160-wallpaper-ungf4iolqlnkrcrp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    height: 100vh;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    width: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    border-radius: 25px;
+    opacity: 85%;
+}
+
+.leftside{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.logo{
+    font-size: 30px;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+}
+
+.links{
+    display: flex;
+    gap: 15px;
+}
+
+.order button{
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.hero{
+    width: 100%;
+
+}
+
+.hero-leftside img{
+    width: 80%;
+    border-radius: 15px;
+
+}
+
+.hero-leftside h1{
+    font-size: 22px;
+    color: white;
+    position: relative;
+    bottom: 800px;
+    left: 700px;
+}
+
+.hero-leftside p{
+    font-size: 15px;
+    color:gray;
+}
