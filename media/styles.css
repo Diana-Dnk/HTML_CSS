@@ -150,10 +150,6 @@ body {
   transition: 0.3s;
 }
 
-.footer-links a:hover {
-  color: gray;
-}
-
 .footer-rightside {
   display: flex;
   align-items: center;
