@@ -118,4 +118,13 @@
 // console.log(result)
 
 // задание 5
-// 
+// let words = ["red", "blue", "green", "hi", "yellow", "cat"];
+// let joined = ""
+// for(let i = 0; i < words.length; i++){
+//     joined += words[i]
+
+//     if(i < words.length - 1){
+//         joined += ", "
+//     }
+// }
+// console.log(joined)
