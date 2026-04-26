@@ -103,12 +103,12 @@
 //     }
 // })
 
-const red = document.getElementById("red")
-const green = document.getElementById("green")
-const card = document.getElementById("card")
-red.addEventListener("click",()=>{
-    card.style.backgroundColor = "red"
-})
-green.addEventListener("click",()=>{
-    card.style.backgroundColor = "green"
-})
+// const red = document.getElementById("red")
+// const green = document.getElementById("green")
+// const card = document.getElementById("card")
+// red.addEventListener("click",()=>{
+//     card.style.backgroundColor = "red"
+// })
+// green.addEventListener("click",()=>{
+//     card.style.backgroundColor = "green"
+// })
