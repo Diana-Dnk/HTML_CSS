@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop with api</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <header class="header">
+            <h1>Shop</h1>
+            <button id="logoutBtn" class="hidden">Выйти</button>
+        </header>
+        <!-- Экран авторизации -->
+        <section id="loginScreen" class="screen">
+            <h2>Вход</h2>
+
+            <form id="loginForm" class="form">
+                <div class="field">
+                    <label for="usernameInput">Username</label>
+                   <input type="text" id="usernameInput" placeholder="Введите username">
+                </div>
+
+                 <div class="field">
+                    <label for="passwordInput">Password</label>
+                    <input type="text" id="passwordInput" placeholder="Ввведите password">
+                </div>
+
+                <button type="submit">Войти</button>
+            </form>
+            <p id="loginMessage" class="message"></p>
+        </section>
+        <!-- Экран профиля -->
+        <section id="profileScreen" class="screen hidden">
+            <h2>Профиль</h2>
+            <div id="profileBlock" class="profile"></div>
+
+            <button id="goToProductsBtn">Перейти к товарам</button>
+        </section>
+        <!-- Экран товаров -->
+         <section id="productsScreen" class="screen hidden">
+            <div class="screenTop">
+                <h2>Товары</h2>
+                <button id="backtoProfileBtn">Профиль</button>
+                <div id="productsBlock" class="products"></div>
+            </div>
+         </section>
+         <!-- Экран одного товара -->
+        <section id="detailScreen" class="screen hidden">
+            <button id="backToProductsBtn">Назад к товарам</button>
+            <div id="productDetailBlock" class="detail"></div>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
