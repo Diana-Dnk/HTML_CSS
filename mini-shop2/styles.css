@@ -1,0 +1,673 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background:
+        radial-gradient(circle at top left, rgba(0, 255, 255, 0.18), transparent 35%),
+        radial-gradient(circle at top right, rgba(255, 0, 204, 0.16), transparent 35%),
+        linear-gradient(135deg, #050816, #070b1f 45%, #03040a);
+    color: #e5f7ff;
+    padding: 28px 20px 50px;
+    overflow-x: hidden;
+}
+
+/* Неоновая сетка на фоне */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(0, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 42px 42px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 28px;
+    color: #00f5ff;
+    text-shadow:
+        0 0 8px rgba(0, 245, 255, 0.9),
+        0 0 22px rgba(0, 245, 255, 0.5);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* ================= ШАПКА ================= */
+
+#siteHeader {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 34px;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background: rgba(8, 12, 32, 0.88);
+    border: 1px solid rgba(0, 245, 255, 0.45);
+    border-radius: 22px;
+    box-shadow:
+        0 0 24px rgba(0, 245, 255, 0.18),
+        inset 0 0 18px rgba(255, 0, 204, 0.06);
+    backdrop-filter: blur(18px);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #ff2bd6;
+    text-shadow: 0 0 12px rgba(255, 43, 214, 0.9);
+}
+
+.navMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.navMenu a {
+    color: #b9f8ff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.navMenu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #ff2bd6;
+    box-shadow: 0 0 10px rgba(255, 43, 214, 0.9);
+    transition: 0.2s ease;
+}
+
+.navMenu a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 245, 255, 0.9);
+}
+
+.navMenu a:hover::after {
+    width: 100%;
+}
+
+.headerActions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+}
+
+#headerUser {
+    padding: 9px 14px;
+    border-radius: 999px;
+    background: rgba(0, 245, 255, 0.1);
+    border: 1px solid rgba(0, 245, 255, 0.35);
+    color: #00f5ff;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* ================= ОБЩИЕ ЭКРАНЫ ================= */
+
+section {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    background: rgba(8, 12, 32, 0.86);
+    border: 1px solid rgba(0, 245, 255, 0.35);
+    border-radius: 26px;
+    padding: 34px;
+    box-shadow:
+        0 0 35px rgba(0, 245, 255, 0.12),
+        0 0 70px rgba(255, 43, 214, 0.08);
+    backdrop-filter: blur(18px);
+}
+
+#shopScreen {
+    max-width: 1150px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 26px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 14px rgba(0, 245, 255, 0.55);
+}
+
+h3 {
+    font-size: 23px;
+    margin: 32px 0 18px;
+    color: #00f5ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #b9f8ff;
+}
+
+input {
+    width: 100%;
+    padding: 15px 17px;
+    border: 1px solid rgba(0, 245, 255, 0.35);
+    border-radius: 14px;
+    background: rgba(2, 6, 23, 0.8);
+    font-size: 15px;
+    color: #ffffff;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+input::placeholder {
+    color: rgba(229, 247, 255, 0.45);
+}
+
+input:focus {
+    border-color: #ff2bd6;
+    box-shadow:
+        0 0 0 4px rgba(255, 43, 214, 0.14),
+        0 0 18px rgba(255, 43, 214, 0.32);
+}
+
+/* ================= КНОПКИ ================= */
+
+button {
+    border: none;
+    border-radius: 14px;
+    padding: 14px 18px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+button[type="submit"] {
+    margin-top: 8px;
+    background: linear-gradient(135deg, #00f5ff, #2962ff);
+    color: #020617;
+    box-shadow: 0 0 22px rgba(0, 245, 255, 0.35);
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 32px rgba(0, 245, 255, 0.62);
+}
+
+#goToLoginBtn,
+#goToRegisterBtn {
+    width: 100%;
+    margin-top: 18px;
+    background: rgba(255, 43, 214, 0.13);
+    border: 1px solid rgba(255, 43, 214, 0.45);
+    color: #ff7be7;
+}
+
+#goToLoginBtn:hover,
+#goToRegisterBtn:hover {
+    background: rgba(255, 43, 214, 0.23);
+    box-shadow: 0 0 18px rgba(255, 43, 214, 0.35);
+}
+
+#headerLogoutBtn,
+#logoutBtn {
+    background: rgba(255, 43, 87, 0.16);
+    border: 1px solid rgba(255, 43, 87, 0.48);
+    color: #ff5c7a;
+    padding: 10px 15px;
+}
+
+#headerLogoutBtn:hover,
+#logoutBtn:hover {
+    background: rgba(255, 43, 87, 0.3);
+    box-shadow: 0 0 18px rgba(255, 43, 87, 0.45);
+}
+
+/* ================= ОШИБКИ ================= */
+
+#registerError,
+#loginError {
+    min-height: 22px;
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ff5c7a;
+    text-align: center;
+}
+
+/* ================= МАГАЗИН ================= */
+
+#userInfo {
+    display: inline-block;
+    background: rgba(0, 245, 255, 0.1);
+    border: 1px solid rgba(0, 245, 255, 0.35);
+    color: #00f5ff;
+    padding: 10px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+#logoutBtn {
+    float: right;
+}
+
+/* Список товаров */
+#productList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+/* Карточки товаров */
+#productList > div {
+    background:
+        linear-gradient(145deg, rgba(10, 17, 45, 0.95), rgba(3, 7, 18, 0.95));
+    border: 1px solid rgba(0, 245, 255, 0.28);
+    border-radius: 22px;
+    padding: 22px;
+    box-shadow:
+        0 0 24px rgba(0, 245, 255, 0.09),
+        inset 0 0 18px rgba(255, 43, 214, 0.05);
+    transition: 0.2s ease;
+}
+
+#productList > div:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 43, 214, 0.65);
+    box-shadow:
+        0 0 28px rgba(255, 43, 214, 0.22),
+        0 0 44px rgba(0, 245, 255, 0.12);
+}
+
+#productList h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+#productList p {
+    font-size: 15px;
+    color: #b9f8ff;
+    margin-bottom: 16px;
+}
+
+#productList button {
+    width: 100%;
+    background: linear-gradient(135deg, #ff2bd6, #7c3aed);
+    color: #ffffff;
+    box-shadow: 0 0 18px rgba(255, 43, 214, 0.35);
+}
+
+#productList button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 28px rgba(255, 43, 214, 0.6);
+}
+
+#productList hr {
+    display: none;
+}
+
+/* ================= КОРЗИНА ================= */
+
+#cartList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#cartList > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    background: rgba(3, 7, 18, 0.82);
+    border: 1px solid rgba(0, 245, 255, 0.25);
+    border-radius: 18px;
+    padding: 16px 18px;
+    box-shadow: 0 0 18px rgba(0, 245, 255, 0.08);
+}
+
+#cartList span {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+#cartList button {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #e5f7ff;
+    padding: 9px 12px;
+}
+
+#cartList button:hover {
+    background: rgba(255, 43, 87, 0.2);
+    color: #ff5c7a;
+    border-color: rgba(255, 43, 87, 0.45);
+}
+
+#cartTotal {
+    margin-top: 20px;
+    padding: 18px;
+    background: linear-gradient(135deg, rgba(0, 245, 255, 0.16), rgba(255, 43, 214, 0.16));
+    border: 1px solid rgba(0, 245, 255, 0.35);
+    color: #ffffff;
+    border-radius: 18px;
+    text-align: right;
+    font-size: 21px;
+    font-weight: 900;
+    box-shadow: 0 0 22px rgba(0, 245, 255, 0.12);
+}
+
+/* ================= АДАПТИВ ================= */
+
+@media (max-width: 900px) {
+    #siteHeader {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .navMenu {
+        gap: 14px;
+    }
+
+    .headerActions {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 24px 14px;
+    }
+
+    h1 {
+        font-size: 34px;
+        margin-bottom: 24px;
+    }
+
+    section {
+        padding: 24px;
+        border-radius: 20px;
+    }
+
+    #shopScreen {
+        max-width: 100%;
+    }
+
+    #logoutBtn {
+        float: none;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    #userInfo {
+        display: block;
+        text-align: center;
+    }
+
+    #cartList > div {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #cartList button {
+        width: 100%;
+    }
+
+    #cartTotal {
+        text-align: center;
+    }
+}
+
+@media (max-width: 520px) {
+    .navMenu {
+        flex-direction: column;
+    }
+
+    .headerActions {
+        flex-direction: column;
+    }
+
+    #headerLogoutBtn {
+        width: 100%;
+    }
+}
+
+/* ================= POKEMON FINDER ================= */
+
+#pokemonSection {
+    max-width: 1150px;
+    margin-top: 30px;
+}
+
+/* Блок поиска */
+
+#pokemonSection input {
+    max-width: 320px;
+}
+
+#findPokemonBtn {
+    margin-left: 12px;
+    background: linear-gradient(135deg, #ff2bd6, #7c3aed);
+    color: white;
+    box-shadow: 0 0 18px rgba(255, 43, 214, 0.35);
+}
+
+#findPokemonBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 28px rgba(255, 43, 214, 0.6);
+}
+
+/* Карточка покемона */
+
+#pokemonCard {
+    margin-top: 30px;
+}
+
+.pokemonBox {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    padding: 28px;
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(10, 17, 45, 0.95),
+            rgba(3, 7, 18, 0.95)
+        );
+
+    border: 1px solid rgba(0, 245, 255, 0.3);
+
+    box-shadow:
+        0 0 30px rgba(0, 245, 255, 0.12),
+        inset 0 0 18px rgba(255, 43, 214, 0.05);
+
+    text-align: center;
+
+    transition: 0.25s ease;
+}
+
+.pokemonBox:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(255, 43, 214, 0.65);
+
+    box-shadow:
+        0 0 28px rgba(255, 43, 214, 0.22),
+        0 0 44px rgba(0, 245, 255, 0.12);
+}
+
+.pokemonBox h2 {
+    margin-bottom: 18px;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #ffffff;
+
+    text-shadow:
+        0 0 12px rgba(0, 245, 255, 0.5);
+}
+
+.pokemonBox img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+
+    margin-bottom: 20px;
+
+    filter:
+        drop-shadow(0 0 14px rgba(0, 245, 255, 0.35));
+}
+
+.pokemonBox p {
+    margin-bottom: 12px;
+
+    color: #b9f8ff;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    letter-spacing: 0.4px;
+}
+
+
+
+#loadProductsBtn {
+    margin-bottom: 20px;
+
+    background:
+        linear-gradient(135deg, #00f5ff, #2962ff);
+
+    color: #020617;
+
+    box-shadow:
+        0 0 22px rgba(0, 245, 255, 0.35);
+}
+
+#loadProductsBtn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 32px rgba(0, 245, 255, 0.62);
+}
+
+
+
+#searchInput {
+    margin-bottom: 25px;
+    max-width: 400px;
+}
+
+
+#productError {
+    margin-bottom: 18px;
+
+    color: #ff5c7a;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.productCard {
+    overflow: hidden;
+}
+
+.productCard img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 16px;
+
+    margin-bottom: 16px;
+
+    border: 1px solid rgba(0, 245, 255, 0.15);
+}
+
+.productCard h3 {
+    margin: 0 0 12px;
+
+    color: #ffffff;
+
+    font-size: 22px;
+}
+
+.productCard p {
+    color: #b9f8ff;
+
+    line-height: 1.5;
+}
+
+.productCard button {
+    margin-top: 16px;
+}
+
+
+
+
+.productCard,
+.pokemonBox,
+#cartList > div,
+section,
+#siteHeader {
+    animation: fadeUp 0.5s ease;
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
